@@ -1,0 +1,474 @@
+	
+body {
+	background: url(/img/background1.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+head {
+	background: url(/img/background1.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+.top_banner .book-reader {
+	position: absolute;
+}
+#main-menu-home .home-selected {
+	background-color: #999999;
+}
+
+
+
+
+#page-container {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+#login-register p {
+	font-family: "Comic Sans MS", sans-serif, Arial;
+	padding: 5px 15px 5px 25px;
+	margin: 1px;
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	top: 25px;
+	left: 79%;
+	border-radius: 5px;
+	background-color: #424242;
+}
+#login-register a {
+	font-family: "Comic Sans MS", sans-serif, Arial;
+	text-decoration: none;
+	font-weight: bold;
+	color: #58ACFA;
+}
+#login-register a:hover {
+	color: white;
+}
+#login-register .search-bar {
+	top: 80px;
+	position: absolute;
+	left: 70%;
+	padding: 2px;
+}
+#search-button {
+	background-color: #58ACFA;
+	border: none;
+	border-radius: 5px;
+	padding: 4px 9px 4px 9px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+#search-button:hover {
+	background-color: #0080FF;
+}
+
+
+
+
+#main-menu {
+	font-family: "Comic Sans MS", sans-serif, Arial;
+	text-align: center;
+	margin: 20px 0;
+	padding: 10px;
+	font-size: 17px;
+	background-color: #2E9AFE;
+	border-radius: 5px;
+}
+#main-menu a {
+	border-radius: 5px;
+	padding: 4px 4px;
+	text-align: center;
+	margin-right: 10px;
+	text-decoration: none;
+	color: black;
+	border-color: black;
+	background-color: #BDBDBD;
+}
+#main-menu a:hover {
+	background-color: #999999;
+}
+
+
+
+
+#most-popular {
+	width: 700px;
+	padding: 0px;
+	margin: 5px 5px 10% 5px;
+	border: 1px;
+	float: left;
+	position: relative;
+	display: block;
+}
+#most-popular h2 {
+	background-color: #2E9AFE;
+	padding: 3px 3px 3px 10px;
+	color: white;
+	font-family: "Comic Sans MS", sans-serif, Arial;
+	border-radius: 3px;
+	margin: 1px 1px 20px 1px
+}
+#most-popular .popular-content {
+	border: 1px solid #848484;
+	border-radius: 5px 5px 0px 0px;
+	background-color: white;
+	background: rgba(71,71,71,0.50);
+}
+#most-popular .book-spec {
+	padding: 3px;
+}
+#most-popular img {
+	width: 80px;
+	height:100px;
+	border:1px solid white;
+	float: left;
+	position: relative;
+	display: block;
+}
+#most-popular img:hover {
+	border:1px solid red;
+}
+#most-popular .popular-table .table-header .rank {
+	padding: 5px 25px 5px 25px;
+	margin-right: 45px;
+	color: white;
+	font-family: "Times New Roman", Arial, sans-serif;
+	font-size:25px;
+}
+#most-popular .popular-table .table-header .title {
+	color: white;
+	font-family: "Times New Roman", Arial, sans-serif;
+	font-size:25px;
+	padding-left: 100px;
+}
+#most-popular .popular-table .ranking-list .ranking {
+	color: white;
+	text-align: center;
+	font-size: 40px;
+}
+#most-popular .popular-table .ranking-list div{
+	color: #E6E6E6;
+	margin-left: 100px;
+}
+#most-popular .popular-table .ranking-list .book-title a {
+	font-size: 20px;
+	margin: 1px;
+	font-family: "Times New Roman", Arial, sans-serif;
+	text-decoration: none;
+	color: #58ACFA;
+}
+#most-popular .popular-table .ranking-list .book-title a:hover {
+	color:white;
+}
+#most-popular p {
+	font-size: 15px;
+	font-family: "Times New Roman", Arial, sans-serif;;
+}
+
+
+
+#latest-list {
+	margin-left: 710px;
+	min-width: 200px;
+	background-color: white;
+	background: rgba(71,71,71,0.50);
+	border: 1px solid #848484;
+	border-radius: 5px 5px 0px 0px;
+	border-top: none;
+}
+#latest-list h2 {
+	color: white;
+	background-color: #2E9AFE;
+	padding: 3px 3px 3px 10px;
+	font-family: "Comic Sans MS", sans-serif, Arial;
+	border-radius: 3px;
+	margin: 1px 1px 20px 1px
+}
+#latest-list .book-list {
+	list-style: none;
+	text-align: left;
+	font-family: Arial, sans-serif, "Comic Sans MS";
+}
+#latest-list .book-list a {
+	text-decoration: none;
+	color: #58ACFA;
+}
+#latest-list .book-list a:hover {
+	color: white;
+}
+#latest-list .book-list li {
+	margin-bottom:10px;
+}
+
+
+
+
+
+#book-list {
+	border: 1px solid white;
+	color: white;
+}
+#book-list h2 {
+	background-color: #2E9AFE;
+	padding: 3px 3px 3px 10px;
+	color: white;
+	font-family: "Comic Sans MS", sans-serif, Arial;
+	border-radius: 3px 3px 0px 0px;
+	margin: 1px 0px 0px 0px
+}
+#book-list table{
+	width: 100%;
+}
+#book-list .book-table-header {
+	font-size: 17px;
+	font-family: "Comic Sans MS", sans-serif, Arial;
+	padding: 5px;
+}
+#book-list .book-table-header .series-name {
+	border-bottom: 1px solid white;
+	margin-bottom: 5px;
+}
+#book-list .book-table-header .author-name {
+	border-bottom: 1px solid white;
+	margin-bottom: 5px;
+}
+#book-list .book-table a {
+	text-decoration: none;
+	color: #58ACFA;
+}
+.mybtns {
+	margin: 5px;
+}
+.mybtns:hover {
+	cursor: pointer;
+	background-color: #999999;
+}
+
+
+
+
+
+
+#login-page h2 {
+	background-color: #2E9AFE;
+	padding: 3px 3px 3px 10px;
+	color: white;
+	font-family: "Comic Sans MS", sans-serif, Arial;
+	border-radius: 3px 3px 0px 0px;
+	margin: 1px 0px 0px 0px
+}
+#login-page {
+	border: 1px solid white;
+	border-top: none;
+}
+#login-page p {
+	text-align: center;
+	font-family: Arial, sans-serif, "Comic Sans MS";
+	color: white;
+	font-size: 15px;
+	
+}
+#sing-in-button {
+	background-color: #58ACFA;
+	border: none;
+	border-radius: 5px;
+	padding: 4px 9px 4px 9px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 50%;
+	margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+#register-page h2 {
+	background-color: #2E9AFE;
+	padding: 3px 3px 3px 10px;
+	color: white;
+	font-family: "Comic Sans MS", sans-serif, Arial;
+	border-radius: 3px 3px 0px 0px;
+	margin: 1px 0px 0px 0px
+}
+#register-page {
+	border: 1px solid white;
+	border-top: none;
+}
+#register-page p {
+	margin-right: 30%;
+	text-align: right;
+	font-family: Arial, sans-serif, "Comic Sans MS";
+	color: white;
+	font-size: 15px;
+}
+
+
+
+
+
+#information {
+	background-color: white;
+	background: rgba(71,71,71,0.50);
+	border: 1px solid #848484;
+	border-radius: 5px 5px 0px 0px;
+	border-top: none
+}
+#information h2 {
+	background-color: #2E9AFE;
+	padding: 3px 3px 3px 10px;
+	color: white;
+	font-family: "Times New Roman", Arial, sans-serif;
+	border-radius: 3px 3px 0px 0px;
+	margin: 1px 0px 20px 0px
+}
+#information img {
+	height:170px;
+	width: 135px;
+	float: left;
+	padding-right: 15px;
+	margin-left: 5px;
+}
+#information .book-info {
+	margin-left: 150px;
+	margin-top: 60px;
+	font-family: "Times New Roman", Arial, sans-serif;
+}
+#information .author-info {
+	margin-left: 150px;
+}
+#information p {
+	color: white;
+	margin-right: 20%;
+	font-family: "Times New Roman", Arial, sans-serif;
+	margin-left: 20px;
+}
+#information a {
+	padding-left: 4px;
+	text-decoration: none;
+	color: #58ACFA;
+}
+#information a:hover {
+	color: white;
+}
+
+
+#user-tab-id {
+	width: 700px;
+	border: 1px solid #848484;
+	border-radius: 5px 5px 0px 0px;
+	background-color: white;
+	background: rgba(71,71,71,0.50);
+
+}
+#user-tab-id .user-head {
+	font-family: "Comic Sans MS", sans-serif, Arial;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	padding: 10px;
+	font-size: 17px;
+	background-color: #2E9AFE;
+	border-radius: 5px;
+}
+#user-tab-id a {
+	border-radius: 5px;
+	padding: 4px 4px;
+	text-align: center;
+	margin-right: 10px;
+	text-decoration: none;
+	color: black;
+	border-color: black;
+	background-color: #BDBDBD;
+}
+#user-tab-id a:hover {
+	background-color: #999999;
+}
+#user-tab-id .user-body{
+	padding-bottom: 10px;
+}
+
+
+#register-div{
+	border: 1px solid white;
+}
+#register-div .register{
+	margin-right: 35%;
+	text-align: right;
+	font-family: Arial, sans-serif, "Comic Sans MS";
+	color: white;
+	font-size: 15px;
+	margin-top: 10px;
+}
+#register-div .register-btn {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#register-div .register-form {
+	color: black;
+}
+#register-div input {
+	color: black;
+}
+#register-div .warning div{
+	height: 40px;
+	text-align: center;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+
+
+
+#login-div{
+	border: 1px solid white;
+}
+#login-div .login{
+	margin-right: 35%;
+	text-align: right;
+	font-family: Arial, sans-serif, "Comic Sans MS";
+	color: white;
+	font-size: 15px;
+	margin-top: 10px;
+}
+#login-div .login-btn {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#login-div .login-form {
+	color: black;
+}
+#login-div input {
+	color: black;
+}
+#login-div .warning div{
+	height: 40px;
+	text-align: center;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+
+
+
+#latest-menu {
+	border: 1px solid #848484;
+	border-radius: 5px 5px 0px 0px;
+	background-color: white;
+	background: rgba(71,71,71,0.50);
+}
+#latest-menu h1 {
+	background-color: #2E9AFE;
+	padding: 3px 3px 3px 10px;
+	color: white;
+	border-radius: 3px;
+	margin: 1px 1px 20px 1px
+}
+#latest-menu .latest-cover {
+	width: 150px;
+	height: 200px;
+}
