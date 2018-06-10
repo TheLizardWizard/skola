@@ -11,18 +11,14 @@
 					<td class="series-name">Series Name</td>
 					<td class="author-name">Author</td>
 				</tr>
-				<tr class="book-name">
-					<td class="book-name"><a href="">Two kinds of truth</a></td>
-					<td class="author"><a href="">Michael Connelly</a></td>
-				</tr>
-				<tr class="book-name">
-					<td class="book-name"><a href="">Two kinds of truth</a></td>
-					<td class="author"><a href="">Michael Connelly</a></td>
-				</tr>
-				<tr class="book-name">
-					<td class="book-name"><a href="">Two kinds of truth</a></td>
-					<td class="author"><a href="">Michael Connelly</a></td>
-				</tr>
+				@if(isset($books) && count($books) > 0 )
+					@foreach ($books as $book)
+						<tr>
+							<td class="book-name">{{ $book->title }}</td>
+							<td class="author">AuthorName</td>
+						</tr>
+					@endforeach
+				@endif
 			</tbody>
 		</table>
 	</div>

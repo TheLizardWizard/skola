@@ -11,8 +11,13 @@
 		</div>
 		<div class="user-body">
 			<ul>
-				<li>Book1</li>
-				<li>Book2</li>
+				@if(isset($books) && count($books) > 0 )
+					@foreach ($books as $book)
+						<li>{{ $book->title }}</li>
+					@endforeach
+				@else
+					<li>No books</li>
+				@endif
 			</ul>
 		</div>
 	</div>

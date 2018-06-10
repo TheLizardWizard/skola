@@ -13,9 +13,9 @@
 
 Route::get('/', 'PagesController@getHome');
 Route::get('/home', 'PagesController@getHome');
-Route::get('/login', 'PagesController@getLogin');
-Route::get('/register', 'PagesController@getRegister');
-Route::get('/book_list', 'PagesController@getBookList');
+//Route::get('/login', 'PagesController@getLogin');
+//Route::get('/register', 'PagesController@getRegister');
+//Route::get('/book_list', 'PagesController@getBookList');
 
 Route::get('/user', function () {
     return view('user');
@@ -23,17 +23,18 @@ Route::get('/user', function () {
 Route::get('/genres', function () {
     return view('genres');
 });
-Route::get('/user/add_book', function () {
-    return view('add_book');
-});
 Route::get('/user/edit', function () {
     return view('edit');
 });
-Route::get('/user/my_book', function () {
-    return view('my_books');
-});
 
-Route::post('/user/add_book/submit', 'MessagesController@submit');
+Route::get('/book_list', 'MessagesController@viewBookList')->name('bookViewBookList');
+Route::get('/user/add_book', 'MessagesController@viewForm')->name('bookViewForm');
+Route::post('/user/add_book', 'MessagesController@submitForm')->name('bookSubmitForm');
+Route::get('/user/my_book', 'MessagesController@viewMyBooks')->name('bookViewMyBooks');
 
-Route::post('/register/submit', 'RegisterController@submit');
 
+//Route::post('/register/submit', 'RegisterController@submit');
+
+Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
