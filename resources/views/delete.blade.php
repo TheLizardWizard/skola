@@ -11,13 +11,13 @@
 		</div>
 		<div class="user-body">
 			<ul>
-				{!! Form::open(['url' => route('bookViewMyEdit')]) !!}
+				{!! Form::open(['url' => route('bookViewMyDelete')]) !!}
 					@if(isset($books) && count($books) > 0 )
 						@foreach ($books as $book)
 
 							<li>
 								{{Form::label('title', $book->title)}}
-								<a href="/user/edit/{{ $book->id }}" class="btn">Edit</a>
+								<a href="/user/delete/{{ $book->id }}" class="btn">Delete</a>
 							</li>
 						@endforeach
 					@else
