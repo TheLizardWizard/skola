@@ -51,7 +51,7 @@ Route::get('/user/delete/{id}', 'MessagesController@deleteMyBook')->name('bookDe
 
 Route::get('/user/edit', 'MessagesController@viewMyEdit')->name('bookViewMyEdit');
 Route::get('/user/edit/{id}', 'MessagesController@editMyEdit')->name('bookEditMyEdit');
-Route::post('/user/edit/{id}', 'MessagesController@submitMyEdit')->name('bookSubmitMyEdit');
+Route::post('/user/edit/', 'MessagesController@submitMyEdit')->name('bookSubmitMyEdit');
 
 //Route::get('/book/{id}', 'MessagesController@viewBookList')->name('bookViewBookList');
 
