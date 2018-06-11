@@ -14,7 +14,7 @@
 				@if(isset($books) && count($books) > 0 )
 					@foreach ($books as $book)
 						<tr>
-							<td class="book-name"><a href="#">{{ $book->title }}</a></td>
+							<td class="book-name"><a href="/book_list/{{ $book->id }}">{{ $book->title }}</a></td>
 							<td class="author">Author {{ $book->user }}</td>
 						</tr>
 					@endforeach

@@ -17,7 +17,7 @@
 			@if(session()->has('status'))
 				<div class="alert alert-success">{{ session()->get('status') }}</div>
 			@else
-				{!! Form::open(['url' => route('bookViewMyEdit')]) !!}
+				{!! Form::open(['url' => route('bookViewForm')]) !!}
 					<div class="user-form">
 						{{Form::label('title','Title')}}
 						{{Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'Enter title'])}}

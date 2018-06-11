@@ -8369,8 +8369,8 @@ head {
 }
 
 #page-container {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #login-register p {
@@ -8845,6 +8845,29 @@ head {
 
 #latest-menu .latest-cover {
   width: 150px;
-  height: 200px;
+  height: 190px;
+}
+
+#latest-menu .row {
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#latest-menu .latest-book {
+  width: 200px;
+  float: left;
+  color: white;
+}
+
+#user-tab-id .user-body li {
+  color: white;
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+#user-tab-id .user-body a {
+  float: right;
+  margin-right: 30%;
 }
 

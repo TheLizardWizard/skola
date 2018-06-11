@@ -177,10 +177,19 @@ class MessagesController extends Controller
     public function viewBookList(){
 
       $books = books::where([
-          ['id', '>=', \Auth::user()->id],
-      ])->select('title','user')->get();
+          ['title', '!=', \Auth::user()->id],
+      ])->select('title','user','id')->get();
 
         return view('book_list',compact('books'));
+    }
+
+    public function viewBook($id){
+
+      $books = books::where([
+          ['id', '=', $id],
+      ])->select('title', 'category', 'summary', 'user')->get();
+
+      return view('series',compact('books'));
     }
 
 
@@ -207,49 +216,49 @@ class MessagesController extends Controller
 
         $catergory = '';
         if(isset($data['action'])){
-          $catergory .= ',action';
+          $catergory .= 'Action';
         }
         if(isset($data['adventure'])){
-          $catergory .= ',adventure';
+          $catergory .= ', Adventure';
         }
         if(isset($data['comedy'])){
-          $catergory .= ',comedy';
+          $catergory .= ', Comedy';
         }
         if(isset($data['drama'])){
-          $catergory .= ',drama';
+          $catergory .= ', Drama';
         }
         if(isset($data['fantasy'])){
-          $catergory .= ',fantasy';
+          $catergory .= ', Fantasy';
         }
         if(isset($data['historical'])){
-          $catergory .= ',historical';
+          $catergory .= ', Historical';
         }
         if(isset($data['horror'])){
-          $catergory .= ',horror';
+          $catergory .= ', Horror';
         }
         if(isset($data['kids'])){
-          $catergory .= ',kids';
+          $catergory .= ', Kids';
         }
         if(isset($data['military'])){
-          $catergory .= ',military';
+          $catergory .= ', Military';
         }
         if(isset($data['music'])){
-          $catergory .= ',music';
+          $catergory .= ', Music';
         }
         if(isset($data['mystery'])){
-          $catergory .= ',mystery';
+          $catergory .= ', Mystery';
         }
         if(isset($data['psychological'])){
-          $catergory .= ',psychological';
+          $catergory .= ', Psychological';
         }
         if(isset($data['romance'])){
-          $catergory .= ',romance';
+          $catergory .= ', Romance';
         }
         if(isset($data['sci-fi'])){
-          $catergory .= ',sci-fi';
+          $catergory .= ', Sci-Fi';
         }
         if(isset($data['sports'])){
-          $catergory .= ',sports';
+          $catergory .= ', Sports';
         }
 
 
