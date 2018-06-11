@@ -42,7 +42,7 @@ class MessagesController extends Controller
     //    return redirect()->route('bookViewMyEdit');
 
     // }
-    public function submitMyEdit(Request $request){
+    public function submitMyEdit($id, Request $request){
       //parbauda pievienoto gramatu
         $data = $request->all();
         $rules = [
@@ -107,13 +107,10 @@ class MessagesController extends Controller
 
 
 
-        $books = books::create([
+        $books = books::update([
           'title' => $data['title'],
           'summary' => $data['summary'],
           'category' => $catergory,
-          'pdf' => false,
-          'cover' => false,
-          'user' => \Auth::user()->id
         ]);
         if($books){
           $request->session()->flash('status', 'Your book was successfully EDITED!');
